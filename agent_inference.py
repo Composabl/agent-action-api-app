@@ -41,7 +41,7 @@ async def init_runtime():
             "local": {"address": "localhost:1337"}
         },
         "env": {
-            "name": "sim-deploy",
+            "name": "agent-api",
         },
         "trainer": {
             "workers": 1
