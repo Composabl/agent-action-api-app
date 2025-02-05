@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Prediction</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Form section -->
+        
+        <div class="container">
+            <div class="logo">
+                <a href="https://composabl.com">
+                    <img src="{{ url_for('static', filename='images/logo-secondary.svg') }}" alt="Logo">
+                </a>
+            </div>            <!-- Form for observation inputs -->
+            <form id="observation-form" onsubmit="handleSubmit(event)">
+                <label for="T">T:</label>
+                <input type="number" step="any" id="T" name="T" value="310" required><br>
+
+                <label for="Tc">Tc:</label>
+                <input type="number" step="any" id="Tc" name="Tc" value="292" required><br>
+
+                <label for="Ca">Ca:</label>
+                <input type="number" step="any" id="Ca" name="Ca" value="8.56" required><br>
+
+                <label for="Cref">Cref:</label>
+                <input type="number" step="any" id="Cref" name="Cref" value="8.56" required><br>
+
+                <label for="Tref">Tref:</label>
+                <input type="number" step="any" id="Tref" name="Tref" value="311" required><br>
+
+                <label for="Conc_Error">Conc Error:</label>
+                <input type="number" step="any" id="Conc_Error" name="Conc_Error" value="0" required><br>
+
+                <label for="Eps_Yield">Eps Yield:</label>
+                <input type="number" step="any" id="Eps_Yield" name="Eps_Yield" value="120" required><br>
+
+                <label for="Cb_Prod">Cb Prod:</label>
+                <input type="number" step="any" id="Cb_Prod" name="Cb_Prod" value="0" required><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Prediction result section -->
+        <div class="prediction-container">
+            <h1>AI Agent Prediction</h1>
+            <div id="result">Action: </div>
+        </div>
+    </div>
+</body>
+</html>

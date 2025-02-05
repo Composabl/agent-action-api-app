@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+*.env
+
+# Logs
+*.log
+logs/
+
+# Virtual environment directories
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Flask cache and session files
+instance/
+.cache/
+
+# Mac OS files
+.DS_Store
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Compiled C extensions (if applicable)
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+coverage.xml
+*.cover
+.hypothesis/
+
+# PyInstaller
+# Usually contains the Python interpreter, and application itself
+*.spec
+/build/

@@ -1,0 +1,4 @@
+composabl
+flask[async]
+numpy
+Jinja2
