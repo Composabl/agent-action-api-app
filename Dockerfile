@@ -1,17 +1,20 @@
-# Use an official Python runtime as the base imagedocker build -t my-agent-runtime .docker build -t my-agent-runtime .
+# Use a lightweight Python image
 FROM python:3.10-slim
+
+# Install necessary build dependencies
+RUN apt update && apt install -y build-essential gcc g++ python3-dev
 
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the necessary files into the Docker image
+# Copy project files
 COPY . .
 
-# Install any dependencies specified in requirements.txt
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port 8000 for the HTTP server
+# Expose port
 EXPOSE 8000
 
-# Command to run the server when the container starts
+# Run the application
 CMD ["python", "agent_inference.py"]

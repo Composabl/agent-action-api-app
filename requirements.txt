@@ -1,6 +1,9 @@
 Cython==3.0.10
 numpy==1.26.4
 torch==2.5.1
+pydantic==2.8.2
+pydantic-settings==2.3.4
+pydantic_core==2.20.1
 composabl==0.9.1
 composabl-api==0.9.1
 composabl-cli==0.9.1
